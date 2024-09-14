@@ -1,0 +1,30 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 72, in script
+    show mermaid scale 0.5
+Exception: Image 'mermaid' does not accept attributes 'scale 0 .5'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 72, in script
+    show mermaid scale 0.5
+  File "C:\Games\RenPy\renpy-8.3.2-sdk\renpy\ast.py", line 1111, in execute
+    show_imspec(self.imspec, atl=getattr(self, "atl", None))
+  File "C:\Games\RenPy\renpy-8.3.2-sdk\renpy\ast.py", line 1074, in show_imspec
+    renpy.config.show(name,
+  File "C:\Games\RenPy\renpy-8.3.2-sdk\renpy\exports\displayexports.py", line 477, in show
+    if not base.find_target() and renpy.config.missing_show:
+  File "C:\Games\RenPy\renpy-8.3.2-sdk\renpy\display\image.py", line 421, in find_target
+    self.target = target._duplicate(a)
+  File "C:\Games\RenPy\renpy-8.3.2-sdk\renpy\display\displayable.py", line 249, in _duplicate
+    args.extraneous()
+  File "C:\Games\RenPy\renpy-8.3.2-sdk\renpy\display\displayable.py", line 109, in extraneous
+    raise Exception("Image '{}' does not accept attributes '{}'.".format(
+Exception: Image 'mermaid' does not accept attributes 'scale 0 .5'.
+
+Windows-10-10.0.22631 AMD64
+Ren'Py 8.3.3.24091101+nightly
+Rusalochka 1.0
+Sat Sep 14 16:30:48 2024
